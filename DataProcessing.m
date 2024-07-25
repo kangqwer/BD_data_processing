@@ -3,7 +3,7 @@ data_add = '.../data.csv';
 data = readtable('data_add', 'HeaderLines', 1);
 t0 = data.LDC_XMB;
 signal = data.LDC_Y;
-t = sqrt(t0 / (23.31 * (58^2 - 24^2) + 24^2)) - 24;
+t = sqrt(t0 / (1024 * 23.31) * (58^2 - 24^2) + 24^2);
 % subplot(2,1,1)
 plot(t,signal)
 
